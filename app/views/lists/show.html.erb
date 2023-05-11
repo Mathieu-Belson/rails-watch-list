@@ -1,0 +1,11 @@
+<h1> <%= @list.name %></h1>
+ <% if @movies %>
+<% @movies.each do |movie| %>
+<p><%= movie.title %></p>
+<p><%= movie.overview %></p>
+<p><%= movie.rating %></p>
+<%= image_tag movie.url, alt: movie.title, width: 200 %>
+<% end %>
+<% end %>
+
+<%= link_to 'Return to lists', lists_path %>
