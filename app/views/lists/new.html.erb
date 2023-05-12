@@ -1,5 +1,4 @@
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
-<% end %>
-<%= link_to 'Return to lists', lists_path %>
+<div class='container'>
+<h1>Add a Category</h1>
+<%= render 'lists/form'  %>
+</div>
